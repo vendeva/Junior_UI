@@ -1,0 +1,29 @@
+.text(@font-family, @font-size, @color){
+  font-family: @font-family, sans-serif;
+  font-size: @font-size;
+  color: @color;
+  line-height: normal;
+}
+
+.button() {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .text('Open Sans Bold', 16px, #363636);
+  cursor: pointer;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 12px 5px 12px 28px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+

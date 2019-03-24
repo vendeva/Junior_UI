@@ -1,0 +1,129 @@
+body {
+  min-width: 360px;
+}
+
+.developments {
+  .flex-column();
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.developments__title {
+  margin-bottom: 36px;
+  text-align: center;
+  .text('Open Sans Bold', 36px, #45852D);
+}
+
+.developments__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.developments-item {
+  flex: 0 1 380px;
+  margin: 0 10px 20px 10px;
+  background-color: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  overflow: hidden;
+}
+
+.developments-item__image {
+  height: 233px;
+  background-size: auto 100%;
+  position: relative;
+
+}
+.developments-item__image img{
+  height: 100%;
+  display: block;
+  position: relative;
+  top:49.99%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.developments-item__independent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  .text('Open Sans Bold', 12px, #fff);
+  padding: 8px 10px 5px;
+  text-align: center;
+  background-color: #006F79;
+}
+
+.developments-item:nth-child(3),
+.developments-item:nth-child(8),
+.developments-item:nth-child(11) {
+  .developments-item__independent {
+    background-color: #EC6608;
+  }
+}
+
+.developments-item:nth-child(n+4) {
+  display: none;
+}
+
+.developments-item__textblock {
+  padding: 15px 20px;
+}
+
+.developments-item__subtitle {
+  .text('Open Sans Bold', 20px, @text);
+  margin-bottom: 2px;
+}
+
+.developments-item__text {
+  .text('Open Sans', 16px, #363636);
+  span {
+    .text('Open Sans Bold', 16px, @text);
+  }
+}
+
+.developments-item__text:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.developments-item__text-bottom {
+  margin-top: 7px;
+  .text('Open Sans', 14px, @text);
+}
+
+.developments-item__link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  order: 1;
+}
+
+#go {
+  display: none;
+}
+
+.developments-item__link label{
+  position: relative;
+  .button();
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.developments-item__link label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 8px;
+  height: 17px;
+  background: url(../../img/Chevron.svg) no-repeat;
+}
+
+#go:checked ~ .developments-item:nth-child(n+6) {
+  display: block;
+}
+
+
+

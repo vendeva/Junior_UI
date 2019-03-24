@@ -1,0 +1,313 @@
+/* ---- RESET START ---- */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  /* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+    from YUI 3 CSS Reset
+*/
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../css/font/OpenSans-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../../css/font/OpenSans-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  min-width: 360px;
+}
+.developments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+}
+.developments__title {
+  margin-bottom: 36px;
+  text-align: center;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 36px;
+  color: #45852D;
+  line-height: normal;
+}
+.developments__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.developments-item {
+  flex: 0 1 380px;
+  margin: 0 10px 20px 10px;
+  background-color: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  overflow: hidden;
+}
+.developments-item__image {
+  height: 233px;
+  background-size: auto 100%;
+  position: relative;
+}
+.developments-item__image img {
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 49.99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.developments-item__independent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: normal;
+  padding: 8px 10px 5px;
+  text-align: center;
+  background-color: #006F79;
+}
+.developments-item:nth-child(3) .developments-item__independent,
+.developments-item:nth-child(8) .developments-item__independent,
+.developments-item:nth-child(11) .developments-item__independent {
+  background-color: #EC6608;
+}
+.developments-item:nth-child(n+4) {
+  display: none;
+}
+.developments-item__textblock {
+  padding: 15px 20px;
+}
+.developments-item__subtitle {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 20px;
+  color: #363636;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+.developments-item__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #363636;
+  line-height: normal;
+}
+.developments-item__text span {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 16px;
+  color: #363636;
+  line-height: normal;
+}
+.developments-item__text:nth-child(2) {
+  margin-bottom: 15px;
+}
+.developments-item__text-bottom {
+  margin-top: 7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #363636;
+  line-height: normal;
+}
+.developments-item__link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  order: 1;
+}
+#go {
+  display: none;
+}
+.developments-item__link label {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 16px;
+  color: #363636;
+  line-height: normal;
+  cursor: pointer;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 12px 5px 12px 28px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.developments-item__link label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 8px;
+  height: 17px;
+  background: url(../../img/Chevron.svg) no-repeat;
+}
+#go:checked ~ .developments-item:nth-child(n+6) {
+  display: block;
+}
+@media screen and (min-width: 1301px) {
+  .developments__items {
+    width: 1300px;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1300px) {
+  .developments-item {
+    flex: 1 1 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .developments {
+    padding: 50px 14px;
+  }
+  .developments-item {
+    margin: 0 0 20px 0;
+  }
+}
